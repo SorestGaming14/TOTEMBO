@@ -43,6 +43,7 @@ body {
 }
 
 /* above are general styles */
+/* below are header menu styles */
 
 .header__nav .container {
     margin: 0 auto;
@@ -85,29 +86,91 @@ body {
 .header__cards {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
+    grid-template-columns: 526px 746px;
+    grid-template-rows: repeat(2, 294px);
+    row-gap: 30px;
+    column-gap: 24px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.header__card {
+    padding: 16px;
+}
+
+.header__card-desc {
+    text-align: center;
 }
 
 .card-topleft {
+    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    max-width: 526px;
+    width: 100%;
+    height: 294px;
+}
+
+.header__card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 43px;
+}
+
+.header__card-content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.header__card-content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: 123px;
+}
+
+.item-name2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 17px;
+    color: #323232;
+    margin: 29px 0;
+}
+
+.item-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin: 20px 0;
 }
 
 .card-bottomleft {
+    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: -1;
+    max-width: 526px;
+    width: 100%;
+    height: 294px;
 }
 
 .card-right {
+    display: inline-block;
     grid-column-start: 2;
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: -1;
+    max-width: 746px;
+    width: 100%;
+    height: 618px;
 }
 
 .header__sale {
@@ -119,4 +182,5 @@ body {
     line-height: 27px;
     color: #FFFFFF;
     padding: 11px 39px;
+    margin-bottom: 8px;
 }
