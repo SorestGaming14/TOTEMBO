@@ -40,14 +40,16 @@ body {
 .container {
     max-width: 1320px;
     width: 100%;
+    margin: 0 auto;
 }
 
 /* above are general styles */
+
 /* below are header menu styles */
 
 .header__nav .container {
-    margin: 0 auto;
-    padding: 50px 12px 20px;
+    padding: 0 12px 20px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,6 +71,13 @@ body {
     color: #323232;
 }
 
+.language {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #323232;
+}
+
 .header__menu {
     display: flex;
     align-items: center;
@@ -80,6 +89,8 @@ body {
     align-items: center;
     column-gap: 40px;
 }
+
+/* header menu styling end */
 
 /* below are header cards styles */
 
@@ -103,7 +114,6 @@ body {
 }
 
 .card-topleft {
-    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -152,7 +162,6 @@ body {
 }
 
 .card-bottomleft {
-    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -163,7 +172,6 @@ body {
 }
 
 .card-right {
-    display: inline-block;
     grid-column-start: 2;
     grid-column-end: -1;
     grid-row-start: 1;
@@ -184,3 +192,125 @@ body {
     padding: 11px 39px;
     margin-bottom: 8px;
 }
+
+/* header styling end */
+
+/* below are main + main cards styles */
+
+.title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+
+.titles {
+    text-align: center;
+    border-bottom: 2px solid #323232;
+    border-radius: 0.5px;
+    margin: 60px auto 40px;
+    padding: 0 12px 20px;
+}
+
+.main__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 416px);
+    grid-template-rows: repeat(4, 485px);
+    row-gap: 40px;
+    column-gap: 24px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.main__card {
+    filter: drop-shadow(6px 6px 15px rgba(132, 132, 132, 0.3));
+    background: #E1E1E1;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.main__sale {
+    display: inline-block;
+    background: #323232;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    max-width: 120px;
+    width: 100%;
+    padding: 13px 0;
+    text-align: center;
+    height: 50px;
+}
+
+.main__card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.main__card-desc {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main__item-type {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232;
+}
+
+.main__item-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin: 20px 0;
+}
+
+.main__item-price {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #323232;
+}
+
+.main__card-list {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.no-sale {
+    margin-top: 45px;
+}
+
+.main__card-icon {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.main__card-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.more {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #323232;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* main card styling end */
+
+/* below are "latest news" section styles */
