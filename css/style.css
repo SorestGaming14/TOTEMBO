@@ -23,14 +23,6 @@ body {
     font-family: 'Montserrat';
 }
 
-.title {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: 2.2px;
-    color: #000000;
-}
-
 .card {
     background: #E1E1E1;
     border-radius: 10px;
@@ -41,6 +33,22 @@ body {
     max-width: 1320px;
     width: 100%;
     margin: 0 auto;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 2.2px;
+    color: #000000;
+}
+
+.titles {
+    text-align: center;
+    border-bottom: 2px solid #323232;
+    border-radius: 0.5px;
+    margin: 60px auto 40px;
+    padding: 0 12px 20px;
 }
 
 /* above are general styles */
@@ -197,19 +205,8 @@ body {
 
 /* below are main + main cards styles */
 
-.title {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 37px;
-    color: #000000;
-}
-
-.titles {
-    text-align: center;
-    border-bottom: 2px solid #323232;
-    border-radius: 0.5px;
-    margin: 60px auto 40px;
-    padding: 0 12px 20px;
+.main {
+    margin-bottom: 60px;
 }
 
 .main__cards {
@@ -314,3 +311,84 @@ body {
 /* main card styling end */
 
 /* below are "latest news" section styles */
+
+.suggestions {
+    display: grid;
+    grid-template-columns: repeat(2, 636px);
+    grid-template-rows: 470px;
+    column-gap: 24px;
+    justify-content: center;
+}
+
+.suggestion {
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7));
+    border-radius: 10px;
+}
+
+.sug1 {
+    background: url(../img/suggest1.png) no-repeat center / cover;
+}
+
+.sug2 {
+    background: url(../img/suggest2.png) no-repeat center / cover;
+}
+
+.suggest {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232;
+    text-align: center;
+    padding: 13px;
+    background: #ffffff;
+    border-radius: 8px;
+    max-width: 150px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.sug__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.title1 {
+    max-width: 466px;
+    width: 100%;
+}
+
+.title2 {
+    max-width: 356px;
+    width: 100%;
+}
+
+.suggestion-info {
+    margin-left: 40px;
+}
+
+.sug-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    font-variant: small-caps;
+    color: #E1E1E1;
+    max-width: 466px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.time-icon {
+    margin-right: 10px;
+}
+
+.sug-date {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
