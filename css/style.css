@@ -392,3 +392,77 @@ body {
     line-height: 20px;
     color: #FFFFFF;
 }
+
+/* main styling end */
+
+/* below are footer styles */
+
+.footer {
+    background: #323232;
+    padding: 100px;
+}
+
+.footer__title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.footer__link {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.footer__small-title {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 2.2px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.footer__info {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+}
+
+.footer__smaller-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2.5px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+}
+
+.number {
+    margin: 15px 0;
+}
+
+.footer__desc {
+    margin-bottom: 60px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__icons {
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+    margin-top: 40px;
+}
